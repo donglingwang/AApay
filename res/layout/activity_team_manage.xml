@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+       <ListView 
+             android:id="@+id/team_list_show"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:divider="#ff000000"
+             android:layout_margin="5dp"
+             android:layout_marginBottom="45dp"
+             android:layout_alignParentTop="true"
+             android:layout_above="@+id/team_layout_temp"
+         >
+        </ListView>
+        <LinearLayout 
+            android:id="@id/team_layout_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            
+        
+		    <LinearLayout 
+		        android:id="@+id/team_layout_add"
+		        android:layout_width="match_parent"
+		        android:layout_height="45dp"
+		        android:gravity="center"
+		        android:visibility="visible"
+		        android:orientation="horizontal">
+		          <Button 
+			        android:id="@+id/team_btn_add"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:text="添加"/>
+		
+		          <Button
+		              android:id="@+id/team_btn_edit"
+		              android:layout_width="wrap_content"
+		              android:layout_height="match_parent"
+		              android:layout_marginLeft="50dp"
+		              android:text="编辑" />
+		    </LinearLayout>
+		    <LinearLayout 
+		        android:id="@+id/team_layout_edit"
+		        android:layout_width="match_parent"
+		        android:layout_height="45dp"
+		        android:gravity="center"
+		        android:visibility="gone"
+		        android:orientation="horizontal">
+		          <Button 
+			        android:id="@+id/team_btn_select_all"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:text="全选"/>
+					<Button 
+			        android:id="@+id/team_btn_delete"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="30dp"
+			        android:text="删除"/>
+		          <Button
+		              android:id="@+id/team_btn_finish"
+		              android:layout_width="wrap_content"
+		              android:layout_height="match_parent"
+		              android:layout_marginLeft="30dp"
+		              android:text="完成" />
+		    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

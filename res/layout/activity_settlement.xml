@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Spinner 
+        android:id="@+id/consume_spin_team"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="未结算账单："/>
+        <ListView 
+            android:id="@+id/consume_lv_settle_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="15sp"
+	            android:text="计算结果："/>
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="40dp"
+	            android:textSize="15sp"
+	            android:text="消费总额："/>
+            <TextView 
+                android:id="@+id/consume_view_total_money"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:textSize="15sp"
+	            android:text="88"/>
+        </LinearLayout>
+        
+        <ListView 
+            android:id="@+id/consume_lv_settle_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+        </ListView>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        >
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        	    <Button 
+	        android:id="@+id/consume_btn_settle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="结算"/>
+            <Button 
+	        android:id="@+id/consume_btn_confirm"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="确定"/>
+
+    </LinearLayout>
+
+</LinearLayout>

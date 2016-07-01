@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AApay</string>
+    <string name="action_settings">更多</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="consume_pelple_select">参与人员选择</string>
+	<string name="consume_type_select">类型选择</string>
+	<string name="date_time_select">选择时间和日期</string>
+	<string name="confirm">确定</string>
+	<string name="cancel">取消</string>
+	<string name="team_name">团队：</string>
+	<string name="consume_mode">消费方式：</string>
+	<string name="consume_continue">继续</string>
+	<string name="save">保存</string>
+	<string name="team_manual_add">手动添加</string>
+	<string name="team_address_import">通讯录导入</string>
+	<string name="team_local_import">本地导入</string>
+	<!-- 界面名称 -->
+	<string name="consume_activity">AA助手</string>
+	<string name="consume_separate_activity">添加消费情况</string>
+	<string name="team_manage_activity">团队管理界面</string>
+	<string name="category_manage_activity">类别管理界面</string>
+	<string name="team_add_activity">添加团队</string>
+	<string name="consume_payment_activity">一次消费结算</string>
+	<string name="participant_manage">参与人员管理</string>
+	<string name="consume_list_activity">消费列表</string>
+	<string name="consume_settlement">账单结算</string>
+	<string name="settle_detail_activity">结算明细</string>
+	<string name="personal_bill_activity">个人收支统计</string>
+	<string name="chart_statistics_activity">图表统计</string>
+	<string name="setting_activity">设置</string>
+	<string name="person_budget_activity">记账</string>
+	<string name="budget_list_activity">消费记录</string>
+	<string name="budget_time_list_activity">查看消费记录</string>
+	<string name="participant_import_activity">参与人员导入</string>
+	<string name="login_activity">登录</string>
+	<string name="register_activity">注册</string>
+</resources>

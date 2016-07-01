@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="团队：" />
+	    <TextView 
+		    android:id="@+id/payment_view_team_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="碧云天"/>
+    </LinearLayout>
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:text="名称：" />
+	    <TextView 
+	        android:id="@+id/payment_view_consume_name"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="早餐"/>
+	     <TextView
+	         android:id="@+id/payment_view_show_payoff"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:visibility="gone"
+		    android:text="是否付清：" />
+		 <TextView 
+	        android:id="@+id/payment_view_payoff"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:visibility="gone"
+	        android:text="付清"/>
+	     <CheckBox
+	         android:id="@+id/payment_cbox_payoff"
+	         android:layout_width="0dp"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="2"
+	         android:text="是否付清" />
+
+	   
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content" 
+		    android:layout_weight="1"
+		    android:gravity="left"
+		    android:text="消费类别："/>
+        <TextView
+		    android:id="@+id/payment_view_category"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content" 
+		    android:layout_weight="1"
+		    android:gravity="left"
+		    android:text="晚餐"/>
+        <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="left"
+	        android:text="总额￥："
+	        />
+	    <TextView
+		    android:id="@+id/payment_view_total_amount"
+		    android:layout_weight="1"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:gravity="left"
+		    android:text="400" />
+        
+    </LinearLayout>
+     
+	<LinearLayout 
+	    android:layout_height="40dp"
+	    android:layout_width="match_parent"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="left"
+	        android:text="人数："
+	        />
+	    <TextView
+		    android:id="@+id/payment_view_part_num"
+		    android:layout_weight="1"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:text="4" />
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:text="人均￥："
+	        />
+	    <TextView
+		    android:id="@+id/payment_view_consume_avg"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:layout_height="wrap_content" 
+		    android:text="80"/>
+	</LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/payment_layout_part_head" 
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        >
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="参与人员"/>
+	    <TextView 
+	        android:id="@+id/payment_view_show_advance_money"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="人均垫付额￥"/>
+    </LinearLayout>
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+	<LinearLayout 
+	    android:id="@+id/consume_layout_participant"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:visibility="visible"
+	    android:orientation="vertical">
+	
+	    
+	</LinearLayout>
+	</ScrollView>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center">
+		<Button 
+	        android:id="@+id/payment_btn_settlement"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="结算"
+	        />
+	    <Button 
+	        android:id="@+id/payment_btn_count"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="计算"
+	        />
+	    <Button 
+	        android:id="@+id/payment_btn_add"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="继续添加"/>
+	    <Button 
+	        android:id="@+id/payment_btn_confirm"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="确定"/>
+
+	</LinearLayout>
+</LinearLayout>

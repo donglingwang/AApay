@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+
+        android:id="@+id/consume_layout_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+		    <TextView
+		        android:id="@+id/consume_view_query_time"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:text="全部数据"/>
+      		<LinearLayout 
+      		    android:layout_width="match_parent"
+      		    android:layout_height="wrap_content"
+      		    android:orientation="horizontal">
+      		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:text="总消费额："/>
+      		    <TextView 
+      		        android:id="@+id/consume_view_total_money"
+      		        android:layout_width="wrap_content"
+      		        android:layout_height="match_parent"
+      		        android:text="80￥"/>
+      		</LinearLayout>
+      			<LinearLayout 
+      		    android:layout_width="match_parent"
+      		    android:layout_height="wrap_content"
+      		    android:orientation="horizontal">
+      		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:text="总结算额："/>
+      		    <TextView 
+      		        android:id="@+id/consume_view_settle_money"
+      		        android:layout_width="wrap_content"
+      		        android:layout_height="match_parent"
+      		        android:text="80￥"/>
+      		</LinearLayout>
+		</LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/consume_btn_billing"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/consume_layout_team"
+        android:text="记一笔" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+        android:layout_below="@id/consume_btn_billing"
+        android:layout_above="@+id/aapay_layout_bottom"
+        android:orientation="vertical" >
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="45dp"
+		    android:orientation="horizontal">
+		    <Spinner
+	            android:id="@+id/consume_spin_team"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_weight="2" />
+		    <Button 
+		        android:id="@+id/consume_btn_team_add"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:text="添加"
+		        />
+		</LinearLayout>
+        
+	    <ListView
+	        android:id="@+id/consume_list_consumption"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        
+	        />
+	        
+    </LinearLayout>
+	<LinearLayout 
+
+	    android:id="@+id/aapay_layout_bottom"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_alignParentBottom="true"
+	    >
+	    <Button 
+	        android:id="@+id/personal_btn_billing"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="个人收支"
+	        />
+	    <Button 
+	        android:id="@+id/bill_btn_settlement"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="结算"
+	        />
+	    <Button 
+	        android:id="@+id/bill_btn_flowing"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="流水"
+	        />
+	    <Button 
+	        android:id="@+id/aapay_btn_chart"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="图表"
+	        />
+	    <Button 
+	        android:id="@+id/aapay_btn_setting"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="更多"
+	        />
+	</LinearLayout>
+</RelativeLayout>
